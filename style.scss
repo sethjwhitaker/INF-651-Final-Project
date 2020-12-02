@@ -1,0 +1,104 @@
+$color: #fff;
+$main-color: #333;
+$bgc: rgb(77, 105, 199);
+$search-font-size: 2em;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $color;
+    background-color: $bgc;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    padding: .5em 0 .5em 0;
+}
+
+.search-bar {
+    label {
+        font-size: $search-font-size;
+    }
+
+    input {
+        font-size: .75*$search-font-size;
+    }
+
+    select {
+        font-size: .75*$search-font-size;
+    }
+
+    button {
+        font-size: .75*$search-font-size;
+        color: $bgc;
+        margin: 1em;
+        padding: .3em;
+        border: 1px solid $color;
+        background-color: $color;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+#wrapper {
+    width: 40%;
+    margin: auto;
+    background-color: $color;
+    border-radius: 10px;
+    color: $main-color;
+}
+
+main {
+    h2 {
+        font-size: 2em;
+        padding: .5em 0 .25em 0;
+    }
+
+    h3 {
+        font-size: 2em;
+        padding: .3em;
+    }
+
+    button {
+        padding: .3em;
+        border: 2px solid $main-color;
+        background-color: $color;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #results-weather {
+        padding-top: 0;
+    }
+
+    .result-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        h3{ 
+            display: inline-block;
+            padding: .1em .3em .1em .3em;
+            font-size: 1.5em;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            text-align: right;
+        }
+        p {
+            display: inline-block;
+            padding: .1em .3em .1em .3em;
+            font-size: 1.5em;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: left;
+        }
+    }
+    
+
+    
+
+}
